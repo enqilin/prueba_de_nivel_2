@@ -44,7 +44,7 @@ class Punto:
         elif(self.x != 0 and self.y == 0):
             print("El punto P({},{}) esta sobre eje y. ".format(self.x , self.y))
         elif(self.x== 0 and self.y == 0):
-            print("El punto P({},{}) esta en punto del origen. ".format(self.x , self.y))
+            print("El punto P({},{}) esta en el punto del origen. ".format(self.x , self.y))
 
     def vector(self , punto):
         punto_x = punto.x - self.x
