@@ -18,3 +18,14 @@ class TestPunto(unittest.Testcase):
         self.assertEqual(Punto.cuadrante(punto5),"El punto P(0,4) esta sobre eje x. ")
         self.assertEqual(Punto.cuadrante(punto6),"El punto P(3,0) esta sobre eje y. ")
         self.assertEqual(Punto.cuadrante(punto7),"El punto P(0,0) esta en el punto de origen. ")
+
+    def test_vector(self):
+        punto = Punto(4,5)
+        punto1 = Punto(3,4)
+        self.assertEqual(Punto.vector(punto,punto1), "El vector es (-1,-1)")
+
+    def test_distancia(self):
+        self.assertEqual(Punto.distancia((Punto(4,4),(4,5)), "La distancia es 1"))
+
+    def test_base(self):
+        

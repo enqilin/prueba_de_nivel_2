@@ -68,10 +68,8 @@ si no se envían se crearán dos puntos en el origen por defecto.
 • Añade al rectángulo un método llamado area que muestre el area"""
 
 class Rectangulo(Punto):
-    def __init__(self, x2 = 0 ,y2 = 0):
+    def __init__(self):
         super().__init__(self)
-        self.x2 = x2
-        self.y2 = y2
 
     def base(self, punto):
         base = abs(self.x -punto.x)
