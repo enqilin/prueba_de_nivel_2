@@ -1,6 +1,3 @@
-
-from punto import Punto
-
 """• Crea una clase llamada Rectangulo con dos puntos (inicial y final) 
 que formarán la diagonal del rectángulo.
 • Añade un método constructor para crear ambos puntos fácilmente, 
@@ -9,7 +6,7 @@ si no se envían se crearán dos puntos en el origen por defecto.
 • Añade al rectángulo un método llamado altura que muestre la altura.
 • Añade al rectángulo un método llamado area que muestre el area"""
 
-
+from punto import Punto
 
 
 class Rectangulo(Punto):
