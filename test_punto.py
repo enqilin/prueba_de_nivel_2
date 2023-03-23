@@ -1,4 +1,5 @@
-from punto import Punto, Rectangulo
+from punto import Punto
+from rectangulo import Rectangulo
 import unittest
 
 class TestPunto(unittest.Testcase):
@@ -22,10 +23,16 @@ class TestPunto(unittest.Testcase):
     def test_vector(self):
         punto = Punto(4,5)
         punto1 = Punto(3,4)
-        self.assertEqual(Punto.vector(punto,punto1), "El vector es (-1,-1)")
+        self.assertEqual(Punto.vector(punto,punto1), "El vector es V(-1,-1)")
 
     def test_distancia(self):
         self.assertEqual(Punto.distancia((Punto(4,4),(4,5)), "La distancia es 1"))
 
     def test_base(self):
-        
+        self.assertEqual(Rectangulo.base((3,4),(4,5)),"La base es 1")
+
+    def test_altura(self):
+        self.assertEqual(Rectangulo.altura((3,4),(4,5)),"La altura es 1")
+
+    def test_area(self):
+        self.assertEqual(Rectangulo.area((3,4),(4,5)),"El area es 1 unidad al cuadrado")
